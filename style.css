@@ -229,10 +229,9 @@ html, body {
 .column {
   height: 60vh;
   position: relative;
-  border-radius: 5px;
   background: red;
   margin: 10px;
-  transition: ease all .5s;
+  transition: ease all .5s !important;
 }
 .column:hover {
    margin: 0;
@@ -306,6 +305,9 @@ html, body {
 }
 
 @media (max-width: 575px) {
+  .banner  a {
+    font-size: 1.3rem;
+  }
   #wrap {
     height: 80vh;
   }
@@ -317,6 +319,9 @@ html, body {
   }
   .column-container {
     grid-template-columns: 1fr;
+  }
+  .column p {
+    writing-mode: horizontal-tb;
   }
   .column {
     height: 30vh;
