@@ -150,6 +150,7 @@ html, body {
 }
 .navbar-lewagon a:hover {
     opacity: 1;
+    color: black;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -185,21 +186,6 @@ html, body {
   border: white 1px solid;
 }
 
-@media (max-width: 900px)  {
-  h1, h2 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.5em;
-  }
-
-  .banner a {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.5rem;
-  }
-}
 
 .cards {
   display: grid;
@@ -208,20 +194,6 @@ html, body {
   grid-gap: 16px;
 }
 
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
 .card-category {
   background-size: cover;
@@ -238,43 +210,20 @@ html, body {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-
-
 
 
 .column {
@@ -355,3 +304,26 @@ html, body {
 .contw {
   opacity: .6;
 }
+
+@media (max-width: 575px) {
+  #wrap {
+    height: 80vh;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+  .column-container {
+    grid-template-columns: 1fr;
+  }
+  .column {
+    height: 30vh;
+  }
+  .sub-banner {
+    margin: 16px;
+  }
+}
+
+
