@@ -356,8 +356,11 @@ html, body {
     font-size: 1.3rem;
   }
   .cta p {
-    text-align: center;
-    margin-top: 40px;
+    text-align: left;
+     margin-bottom: 100px;
+}
+
+
   }
   .banner h1 {
     font-size: 3rem;
