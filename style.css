@@ -229,6 +229,7 @@ html, body {
 .column {
   height: 60vh;
   position: relative;
+  padding: 3px;
   background: red;
   margin: 10px;
   transition: ease all .5s !important;
@@ -252,6 +253,10 @@ html, body {
 
   text-decoration: none;
 
+}
+
+.flickity-page-dots {
+  bottom: -62px !important;
 }
 
 .column-container {
@@ -304,7 +309,43 @@ html, body {
   opacity: .6;
 }
 
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 320PX !important;
+  height: 500px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+.social-scroll {
+  display: none;
+  color: #cccccc;
+  font-size: 1.2rem;
+  opacity: .2;
+}
+
+.main-carousel {
+    display: none;
+  }
+
+.flickity-viewport {
+  height: 500px;
+}
+
 @media (max-width: 575px) {
+  .main-carousel {
+    display: block;
+  }
+
+  .social-scroll {
+    display: block;
+  }
+
+
   .banner  a {
     font-size: 1.3rem;
   }
@@ -314,21 +355,25 @@ html, body {
   p {
     font-size: 1.3rem;
   }
+  .cta p {
+    text-align: center;
+    margin-top: 40px;
+  }
   .banner h1 {
     font-size: 3rem;
   }
   .column-container {
-    grid-template-columns: 1fr;
+    display: none;
   }
-  .column p {
-    writing-mode: horizontal-tb;
-  }
-  .column {
-    height: 30vh;
-  }
+
   .sub-banner {
     margin: 16px;
   }
 }
 
+/* external css: flickity.css */
+
+
+
+/* cell number */
 
