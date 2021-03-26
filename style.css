@@ -35,8 +35,15 @@ ul {
   color: #557092 !important;
 }
 
+.lw {
+  color: #f76366 !important;
+  font-weight: 400 !important;
+  text-decoration: underline !important;
+}
+
 .cont.cta > p {
   color: #557092 !important;
+  max-width: 1210px;
 }
 
 .column p {
@@ -154,7 +161,7 @@ a, a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 240px;
+  height: 310px;
   color:#557092;
 }
 
@@ -203,14 +210,12 @@ a, a:hover {
 .banner  a {
   font-weight: 100;
   color: #120a6d;
-  font-size: 1.3rem;
   }
 
 .cta a {
   font-weight: bold;
   color: #4254ff;
   transition: ease 1s all;
-  font-size: 1.5rem;
 }
 
 .list-none {
@@ -257,6 +262,12 @@ a, a:hover {
 .cta i {
   margin-left: 23px;
   font-size: 30px;
+}
+
+.sfe a {
+  font-size: 50px;
+    color: #130a6d;
+    font-weight: 100;
 }
 
 .sfe > :first-child > i {
@@ -320,14 +331,23 @@ textarea.form-control {
 }
 
 .name-button {
+  font-size: 21px;
   position: absolute;
-  right: -160px;
+  right: -161px;
   background: #f6f6f6 !important;
   border: solid 1px #f6f6f6 !important;
   border-radius: 70px !important;
-  bottom: 57px;
+  bottom: 56px;
   box-shadow: 0px 1px 20px 12px #9292922e;
 }
+
+
+.name-button:hover {
+  bac: white !important;
+  padding: 10px 25px !important;
+  ba
+}
+
 
 .special-image {
     width: 230px;
@@ -377,7 +397,7 @@ html, body {
 }
 
 .navbar-lewagon img {
-  max-width: 250px;
+  width: 270px;
 }
 .navbar-lewagon a {
   color: #557092;
@@ -477,7 +497,7 @@ html, body {
 
 .case-study-button {
   border: solid 1px #4254ff;
-  width: 140px;
+  width: 160px;
   text-align: center;
   padding: 10px;
   color: #f1f4f9;
@@ -629,6 +649,7 @@ html, body {
 }
 
 .main-btn {
+  transition: ease all .5s;
   padding: 10px 25px !important;
     margin: 0 15px;
     border-radius: 84px;
@@ -638,8 +659,19 @@ html, body {
     color: #ffffff !important;
 }
 
-.main-btn:hover {
+.main-btn.image-button:hover {
+  transition: ease all .5s;
+  background: #4353FF !important;
+  border: solid 1px #4e46a9;
+  background: #4353FF;
 }
+
+.main-btn:hover {
+  opacity: 1;
+    border: solid 1px #140a6d;
+    background: #120a6d;
+  }
+
 
 /* external css: flickity.css */
 
@@ -713,12 +745,15 @@ html, body {
     font-size: 45px;
     color: #f6f6f6;
     line-height: 47px;
-    /* text-align: center; */
+
     font-weight: bold;
   }
-    .banner-b {
-      height: auto;
-      padding: 55px 0
+  .banner-b {
+    height: auto;
+    padding: 55px 0
+  }
+   .footer {
+      height: 500px;
     }
 }
 
@@ -730,4 +765,32 @@ html, body {
     }
 }
 
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column p {
+    display: none
+  }
+
+  .second-banner {
+    display: none;
+  }
+
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+
+
+}
 
