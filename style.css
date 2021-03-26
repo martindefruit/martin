@@ -1,8 +1,6 @@
 /* TODO: design your profile with CSS */
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 body {
   font-size: 28px;
   background-color: #f6f6f6!important;
@@ -139,7 +137,7 @@ a, a:hover {
 }
 
 .special .cont h1 {
-  font-family: Bebas Neue;
+  font-family: 'Bebas Neue', cursive;
     font-size: 57px;
     color: #f6f6f6;
     line-height: 65px;
@@ -209,8 +207,9 @@ a, a:hover {
 }
 
 .banner  a {
-  font-weight: 100;
-  color: #120a6d;
+      font-weight: 100;
+    color: #120a6d;
+    z-index: 1000000;
   }
 
 .cta a {
@@ -231,7 +230,7 @@ a, a:hover {
 }
 
 .card h2, .banner-b h1 {
-  font-family: Bebas Neue;
+  font-family: 'Bebas Neue', cursive;
   font-size: 57px;
   color: #130a6d;
   line-height: 65px;
@@ -295,7 +294,7 @@ textarea.form-control {
 
 .banner h1, .banner-c h1, .banner-b h1, .ose a {
 
-   font-family: Bebas Neue;
+   font-family: 'Bebas Neue', cursive;
     font-weight: 900;
     line-height: 1;
     font-size: 97px;
@@ -383,7 +382,7 @@ html, body {
 }
 
 .serif-hlight {
-  font-family: GT Super Ds Trial;
+  font-family: 'Bebas Neue', cursive;
   font-style: italic;
 }
 
@@ -717,8 +716,8 @@ html, body {
     }
 
     .card h2 {
-      font-size: 45px;
-      line-height: 42px;
+      font-size: 35px;
+      line-height: 37px;
     }
     .special-image-wrap {
       bottom: -60px;
@@ -743,12 +742,11 @@ html, body {
     min-height: 640px;
     }
     .special .cont h1 {
-    font-family: Bebas Neue;
+    font-family: 'Bebas Neue', cursive;
     font-size: 45px;
     color: #f6f6f6;
     line-height: 47px;
 
-    font-weight: bold;
   }
   .banner-b {
     height: auto;
