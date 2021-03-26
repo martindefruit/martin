@@ -293,9 +293,10 @@ textarea.form-control {
 }
 
 .banner h1, .banner-c h1, .banner-b h1, .ose a {
+
    font-family: Bebas Neue;
     font-weight: 900;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     line-height: 1;
     font-size: 97px;
 
@@ -761,7 +762,7 @@ html, body {
 @media screen and (max-width: 375px) {
     .banner h1,  .banner-b h1, .banner-c h1  {
       font-size: 50px;
-      letter-spacing: 1px;
+
     }
 }
 
