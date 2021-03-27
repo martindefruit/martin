@@ -712,7 +712,7 @@ html, body {
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1250px) {
     .banner h1, .banner-c h1  {
       font-size: 60px;
     }
