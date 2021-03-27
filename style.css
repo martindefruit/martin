@@ -209,7 +209,8 @@ a, a:hover {
 }
 
 .banner  a {
-      font-weight: 100;
+    font-weight: 100;
+    font-size: 21px;
     color: #120a6d;
     z-index: 1000000;
   }
@@ -326,7 +327,7 @@ textarea.form-control {
 
 .image-button {
     position: absolute;
-    right: -110px;
+    right: -121px;
     border-radius: 70px !important;
     background: #130a6d !important;
     bottom: -10px;
@@ -701,7 +702,7 @@ html, body {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
     .banner h1 {
       font-size: 77px;
     }
@@ -712,7 +713,7 @@ html, body {
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1150px) {
     .banner h1, .banner-c h1  {
       font-size: 60px;
     }
